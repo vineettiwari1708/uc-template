@@ -79,3 +79,30 @@ TLS - 587
 SMTP Username - contact@urbanfeatconstruction.com
 SMTP Password - 12x7=2nLxxxxx
 
+#connect whatsup
+<script>
+  document.addEventListener('wpcf7mailsent', function (event) {
+    const inputs = event.detail.inputs;
+    let formData = {};
+
+    inputs.forEach(function(input) {
+      formData[input.name] = input.value;
+    });
+
+    // Construct message
+    const message = `Hello Urbanfeat,%0A%0A` +
+      `Name: ${formData["your-name"] || ""}%0A` +
+      `Mobile: ${formData["tel-812"] || ""}%0A` +
+      `Email: ${formData["email-527"] || ""}%0A` +
+      `Service: ${formData["checkbox-34"] || ""}%0A` +
+      `Requirement: ${formData["your-subject"] || ""}`;
+
+    // Replace with your WhatsApp number (without + or 00)
+    const phoneNumber = "917530976172"; // e.g. +91 7530976172
+
+    // Redirect to WhatsApp with message
+    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+  }, false);
+</script>
+
+
