@@ -1,0 +1,81 @@
+# Form area
+<label> Your name
+    [text* your-name required] </label>
+
+<label> Your number
+    [tel* tel-812 minlength:10 maxlength:10 required] </label>
+
+<label> Your email
+[email* email-527 required] </label>
+[checkbox* checkbox-34 "Construction " "House Plan" "Interior Designer"]
+<label> Requirement 
+   
+[textarea* your-subject rows:3 cols:50 required]
+
+</label>
+
+[submit "Submit" ]
+
+
+# Mail area for stylish mail 
+
+To 
+From
+Subject
+
+
+<div style="max-width:600px; margin:auto; font-family:'Segoe UI', Roboto, Arial, sans-serif; border:1px solid #e0e0e0; border-radius:8px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.05);">
+  <div style="background-color:#004b8d; padding:20px; color:white; text-align:center;">
+    <h2 style="margin:0; font-size:24px;">New Inquiry Received</h2>
+    <p style="margin:5px 0 0; font-size:14px;">Urbanfeat Construction</p>
+  </div>
+
+  <div style="padding:20px; background-color:#f9f9f9;">
+    <table style="width:100%; border-collapse:collapse; font-size:15px;">
+      <tr>
+        <td style="padding:10px; font-weight:bold; width:35%;">👤 Client Name:</td>
+        <td style="padding:10px;">[your-name]</td>
+      </tr>
+      <tr style="background-color:#fff;">
+        <td style="padding:10px; font-weight:bold;">📞 Mobile Number:</td>
+        <td style="padding:10px;">[tel-812]</td>
+      </tr>
+      <tr>
+        <td style="padding:10px; font-weight:bold;">✉️ Email:</td>
+        <td style="padding:10px;">[email-527]</td>
+      </tr>
+      <tr style="background-color:#fff;">
+        <td style="padding:10px; font-weight:bold;">📂 Categories:</td>
+        <td style="padding:10px;">[checkbox-34]</td>
+      </tr>
+      <tr>
+        <td style="padding:10px; font-weight:bold;">📝 Requirement:</td>
+        <td style="padding:10px;">[your-subject]</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="padding:20px; background-color:#ffffff; font-size:14px; color:#555;">
+    <p style="margin:0 0 10px;">Regards,</p>
+    <p style="margin:0; font-weight:bold;">Urbanfeat Construction</p>
+    <p style="margin:2px 0;">3rd Floor, Om Tower,<br> D-2/106, Vibhuti Khand,<br>Gomti Nagar, Lucknow,<br> India, Uttar Pradesh</p>
+    <p style="margin:2px 0;">📱 +91-7530976172</p>
+    <p style="margin:2px 0;">🌐 <a href="http://www.urbanfeatconstruction.com" style="color:#004b8d; text-decoration:none;">www.urbanfeatconstruction.com</a></p>
+  </div>
+
+  <div style="text-align:center; padding:10px; background-color:#f0f0f0; font-size:12px; color:#999;">
+    This is an automated message from your website contact form.
+  </div>
+</div>
+
+
+
+# connect WP Mail SMTP
+From Email - contact@urbanfeatconstruction.com
+other SMTP
+SMTP Host - smtp.hostinger.com
+TLS - 587
+# these value change from hostinger dashboard, navigate emails -mange yours domain emails email & password
+SMTP Username - contact@urbanfeatconstruction.com
+SMTP Password - 12x7=2nLxxxxx
+
